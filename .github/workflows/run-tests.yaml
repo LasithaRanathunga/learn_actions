@@ -7,11 +7,11 @@ jobs:
       - name: show current folder
         run: pwd &&  ls
       - name: get code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v3
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-verson: 18
+          node-version: 18
       - name: install dependancies
         run: npm ci
       - name: Run Tests
