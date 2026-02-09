@@ -14,5 +14,7 @@ jobs:
           node-version: 18
       - name: install dependancies
         run: npm ci
+      - name: show current folder aster npm ci
+        run: pwd &&  ls
       - name: Run Tests
         run: npm test
