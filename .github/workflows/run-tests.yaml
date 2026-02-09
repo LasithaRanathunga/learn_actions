@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: show current folder
-        run: echo pwd && echo ls
+        run: pwd &&  ls
       - name: get code
         uses: actions/checkout@v6
       - name: Install Node
